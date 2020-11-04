@@ -1,0 +1,30 @@
+{
+  "name": "ar-style",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alcoraven/ar-style.git"
+  },
+  "author": "Alcoraven",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alcoraven/ar-style/issues"
+  },
+  "homepage": "https://github.com/Alcoraven/ar-style#readme",
+  "devDependencies": {
+    "css-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^1.2.1",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.0.5",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.1.0"
+  },
+  "dependencies": {}
+}
