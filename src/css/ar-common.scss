@@ -367,6 +367,9 @@ html {
       flex-grow: 1;
     }
   }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
   .flex-horizontal {
     flex-direction: row;
   }
@@ -400,9 +403,6 @@ html {
 }
 //文字相关
 .ar-style {
-  .font-bold {
-    font-weight: bold;
-  }
   .text-bold {
     font-weight: bold;
   }

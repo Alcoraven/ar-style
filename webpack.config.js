@@ -8,6 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, './lib'),
     // publicPath: '/dist/',
     filename: 'index.js',
+    // libraryTarget: 'commonjs2'
   },
   plugins: [new MiniCssExtractPlugin({
     filename: 'index.css'
