@@ -1,0 +1,89 @@
+//背景色 字色
+.ar-style {
+  $dark-color-list: 'red', 'orange', 'olive', 'green', 'cyan', 'blue', 'purple', 'mauve', 'pink', 'brown', 'grey', 'black', 'darkGray', 'ghostWhite';
+  $light-color-list: 'yellow', 'gray';
+
+  $colors: (
+          color-red: #e54d42,
+          color-orange: #f37b1d,
+          color-yellow: #fbbd08,
+          color-olive: #8dc63f,
+          color-green: #39b54a,
+          color-cyan: #1cbbb4,
+          color-blue: #0081ff,
+          color-purple: #6739b6,
+          color-mauve: #9c26b0,
+          color-pink: #e03997,
+          color-brown: #a5673f,
+          color-grey: #8799a3,
+          color-black: #333333,
+          color-darkGray: #666666,
+          color-gray: #aaaaaa,
+          color-ghostWhite: #f1f1f1,
+          color-white: #ffffff
+  );
+  //--red: #e54d42;
+  //--orange: #f37b1d;
+  //--yellow: #fbbd08;
+  //--olive: #8dc63f;
+  //--green: #39b54a;
+  //--cyan: #1cbbb4;
+  //--blue: #0081ff;
+  //--purple: #6739b6;
+  //--mauve: #9c26b0;
+  //--pink: #e03997;
+  //--brown: #a5673f;
+  //--grey: #8799a3;
+  //--black: #333333;
+  //--darkGray: #666666;
+  //--gray: #aaaaaa;
+  //--ghostWhite: #f1f1f1;
+  //--white: #ffffff;
+
+  .bg-white {
+    //background-color: var(--white);
+    background-color: map-get($colors, color-white);
+    //color: var(--darkGray);
+    color: map-get($colors, color-darkGray);
+  }
+  .text-white {
+    //color: var(--white);
+    color: map-get($colors, color-white);
+  }
+  @each $c in $dark-color-list{
+    .bg-#{unquote($c)}{
+      //background-color: var(--#{$c});
+      background-color: map-get($colors, color-#{unquote($c)});
+      //color: var(--white);
+      color: map-get($colors, color-white);
+    }
+    //.text-#{$c}{
+    //  //color: var(--#{$c});
+    //  color: map-get($colors, color-#{$c});
+    //}
+  }
+  @each $c in $light-color-list{
+    .bg-#{unquote($c)}{
+      //background-color: var(--#{$c});
+      background-color: map-get($colors, color-#{unquote($c)});
+      //color: var(--black);
+      color: map-get($colors, color-black);
+    }
+    //.text-#{$c}{
+    //  //color: var(--#{$c});
+    //  color: map-get($colors, color-#{$c});
+    //}
+  }
+  @each $c in $dark-color-list{
+    .text-#{unquote($c)}{
+      //color: var(--#{$c});
+      color: map-get($colors, color-#{unquote($c)});
+    }
+  }
+  @each $c in $light-color-list{
+    .text-#{unquote($c)}{
+      //color: var(--#{$c});
+      color: map-get($colors, color-#{unquote($c)});
+    }
+  }
+}

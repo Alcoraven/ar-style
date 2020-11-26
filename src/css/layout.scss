@@ -1,0 +1,278 @@
+// 通用样式
+.full-width {
+  width: 100%;
+}
+.full-height {
+  height: 100%;
+}
+.half-width {
+  width: 50%;
+}
+.half-height {
+  height: 50%;
+}
+//根据屏幕大小定义字体大小
+html {
+  @media screen and (min-width: 1920px) {
+    font-size: 18px;
+  }
+  @media screen and (min-width: 1440px) and (max-width: 1919px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1366px) and (max-width: 1439px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1280px) and (max-width: 1365px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 1279px) {
+    font-size: 12px;
+  }
+}
+.ar-style {
+  .border-box {
+    box-sizing: border-box;
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .no-warp {
+    white-space: nowrap;
+  }
+  .radius {
+    border-radius: 4px;
+  }
+}
+//通用margin padding样式
+.ar-style {
+  .margin-top-xl {
+    margin-top: 1.25rem;
+  }
+  .margin-top-lg {
+    margin-top: 1rem;
+  }
+  .margin-top {
+    margin-top: 0.75rem;
+  }
+  .margin-top-sm {
+    margin-top: 0.5rem;
+  }
+  .margin-top-xs {
+    margin-top: 0.25rem;
+  }
+  .margin-bottom-xl {
+    margin-bottom: 1.25rem;
+  }
+  .margin-bottom-lg {
+    margin-bottom: 1rem;
+  }
+  .margin-bottom {
+    margin-bottom: 0.75rem;
+  }
+  .margin-bottom-sm {
+    margin-bottom: 0.5rem;
+  }
+  .margin-bottom-xs {
+    margin-bottom: 0.25rem;
+  }
+  .margin-left-xl {
+    margin-left: 1.25rem;
+  }
+  .margin-left-lg {
+    margin-left: 1rem;
+  }
+  .margin-left {
+    margin-left: 0.75rem;
+  }
+  .margin-left-sm {
+    margin-left: 0.5rem;
+  }
+  .margin-left-xs {
+    margin-left: 0.25rem;
+  }
+  .margin-right-xl {
+    margin-right: 1.25rem;
+  }
+  .margin-right-lg {
+    margin-right: 1rem;
+  }
+  .margin-right {
+    margin-right: 0.75rem;
+  }
+  .margin-right-sm {
+    margin-right: 0.5rem;
+  }
+  .margin-right-xs {
+    margin-right: 0.25rem;
+  }
+  .margin-horizontal-xl {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+  .margin-horizontal-lg {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .margin-horizontal {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+  .margin-horizontal-sm {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .margin-horizontal-xs {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+  .margin-vertical-xl {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .margin-vertical-lg {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .margin-vertical {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .margin-vertical-sm {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .margin-vertical-xs {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  .margin-all-xl {
+    margin: 1.25rem;
+  }
+  .margin-all-lg {
+    margin: 1rem;
+  }
+  .margin-all {
+    margin: 0.75rem;
+  }
+  .margin-all-sm {
+    margin: 0.5rem;
+  }
+  .margin-all-xs {
+    margin: 0.25rem;
+  }
+  .padding-top-xl {
+    padding-top: 1.25rem;
+  }
+  .padding-top-lg {
+    padding-top: 1rem;
+  }
+  .padding-top {
+    padding-top: 0.75rem;
+  }
+  .padding-top-sm {
+    padding-top: 0.5rem;
+  }
+  .padding-top-xs {
+    padding-top: 0.25rem;
+  }
+  .padding-bottom-xl {
+    padding-bottom: 1.25rem;
+  }
+  .padding-bottom-lg {
+    padding-bottom: 1rem;
+  }
+  .padding-bottom {
+    padding-bottom: 0.75rem;
+  }
+  .padding-bottom-sm {
+    padding-bottom: 0.5rem;
+  }
+  .padding-bottom-xs {
+    padding-bottom: 0.25rem;
+  }
+  .padding-left-xl {
+    padding-left: 1.25rem;
+  }
+  .padding-left-lg {
+    padding-left: 1rem;
+  }
+  .padding-left {
+    padding-left: 0.75rem;
+  }
+  .padding-left-sm {
+    padding-left: 0.5rem;
+  }
+  .padding-left-xs {
+    padding-left: 0.25rem;
+  }
+  .padding-right-xl {
+    padding-right: 1.25rem;
+  }
+  .padding-right-lg {
+    padding-right: 1rem;
+  }
+  .padding-right {
+    padding-right: 0.75rem;
+  }
+  .padding-right-sm {
+    padding-right: 0.5rem;
+  }
+  .padding-right-xs {
+    padding-right: 0.25rem;
+  }
+  .padding-horizontal-xl {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .padding-horizontal-lg {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .padding-horizontal {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  .padding-horizontal-sm {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .padding-horizontal-xs {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+  .padding-vertical-xl {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  .padding-vertical-lg {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .padding-vertical {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  .padding-vertical-sm {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .padding-vertical-xs {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+  .padding-all-xl {
+    padding: 1.25rem;
+  }
+  .padding-all-lg {
+    padding: 1rem;
+  }
+  .padding-all {
+    padding: 0.75rem;
+  }
+  .padding-all-sm {
+    padding: 0.5rem;
+  }
+  .padding-all-xs {
+    padding: 0.25rem;
+  }
+}

@@ -1,0 +1,42 @@
+//flex相关
+.ar-style {
+  .flex {
+    display: flex;
+    .flex-grow {
+      flex-grow: 1;
+    }
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .flex-horizontal {
+    flex-direction: row;
+  }
+  .flex-horizontal-reverse {
+    flex-direction: row-reverse;
+  }
+  .flex-vertical {
+    flex-direction: column;
+  }
+  .flex-vertical-reverse {
+    flex-direction: column-reverse;
+  }
+  .align-items-center {
+    align-items: center;
+  }
+  .align-items-end {
+    align-items: flex-end;
+  }
+  .justify-content-between {
+    justify-content: space-between;
+  }
+  .justify-content-around {
+    justify-content: space-around;
+  }
+  .justify-content-center {
+    justify-content: center;
+  }
+  .justify-content-end {
+    justify-content: flex-end;
+  }
+}
