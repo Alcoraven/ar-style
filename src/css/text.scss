@@ -1,8 +1,10 @@
 //文字相关
 .ar-style {
+  //文字加粗
   .text-bold {
     font-weight: bold;
   }
+  //文字居中/靠左/靠右
   .text-center {
     text-align: center;
   }
@@ -12,6 +14,11 @@
   .text-right {
     text-align: right;
   }
+  //不自动换行
+  .no-warp {
+    white-space: nowrap;
+  }
+  //文字超过宽度自动省略，需搭配width使用
   .text-ellipsis {
     overflow: hidden;
     white-space: nowrap;
