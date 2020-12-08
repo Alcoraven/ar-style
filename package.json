@@ -27,6 +27,8 @@
     "webpack-cli": "^4.1.0"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
+    "ar-test": "1.0.3-beta",
     "resolve-url-loader": "^3.1.2"
   }
 }
