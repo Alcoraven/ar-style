@@ -1,42 +1,67 @@
 //flex相关
+@mixin flex-common {
+  &.flex-wrap {
+    flex-wrap: wrap;
+  }
+  .flex-grow {
+    flex-grow: 1;
+  }
+}
+@mixin flex-align-items {
+  &.align-items-center {
+    align-items: center;
+  }
+  &.align-items-end {
+    align-items: flex-end;
+  }
+}
+@mixin flex-justify-content {
+  &.justify-content-between {
+    justify-content: space-between;
+  }
+  &.justify-content-around {
+    justify-content: space-around;
+  }
+  &.justify-content-center {
+    justify-content: center;
+  }
+  &.justify-content-end {
+    justify-content: flex-end;
+  }
+}
 .ar-style {
   .flex {
     display: flex;
-    .flex-grow {
-      flex-grow: 1;
+    @include flex-common;
+    @include flex-align-items;
+    @include flex-justify-content;
+    &-horizontal {
+      display: flex;
+      flex-direction: row;
+      @include flex-common;
+      @include flex-align-items;
+      @include flex-justify-content;
     }
-  }
-  .flex-wrap {
-    flex-wrap: wrap;
-  }
-  .flex-horizontal {
-    flex-direction: row;
-  }
-  .flex-horizontal-reverse {
-    flex-direction: row-reverse;
-  }
-  .flex-vertical {
-    flex-direction: column;
-  }
-  .flex-vertical-reverse {
-    flex-direction: column-reverse;
-  }
-  .align-items-center {
-    align-items: center;
-  }
-  .align-items-end {
-    align-items: flex-end;
-  }
-  .justify-content-between {
-    justify-content: space-between;
-  }
-  .justify-content-around {
-    justify-content: space-around;
-  }
-  .justify-content-center {
-    justify-content: center;
-  }
-  .justify-content-end {
-    justify-content: flex-end;
+    &-vertical {
+      display: flex;
+      flex-direction: column;
+      @include flex-common;
+      @include flex-align-items;
+      @include flex-justify-content;
+    }
+    &-horizontal-reverse {
+      display: flex;
+      flex-direction: row-reverse;
+      @include flex-common;
+      @include flex-align-items;
+      @include flex-justify-content;
+    }
+    &-vertical-reverse {
+      display: flex;
+      flex-direction: column-reverse;
+      @include flex-common;
+      @include flex-align-items;
+      @include flex-justify-content;
+    }
   }
 }

@@ -3,6 +3,8 @@ var webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
+  mode: 'production',
+  // mode: 'development',
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, './lib'),
@@ -40,6 +42,18 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           'css-loader',
           'sass-loader'
+        ],
+      },
+      {
+        test: /\.less$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader'
+          },
+          {
+            loader: 'less-loader', // 将 Less 编译成 CSS
+          },
         ],
       },
     ]
